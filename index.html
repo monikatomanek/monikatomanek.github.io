@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monika Tomanek | Portfolio</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff4ba; /* Soft golden color */
+      color: #222;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      overflow-x: hidden;
+    }
+    header {
+      background: #141414;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .project {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .project h2 {
+      margin-top: 0;
+    }
+    .project p {
+      margin-bottom: 0.5rem;
+    }
+    .project a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    /* Glitter animation */
+    .glitter {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image: url('https://cdn.jsdelivr.net/gh/auroratide/glitter.js@master/glitter.gif');
+      background-size: cover;
+      opacity: 0.08;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="glitter"></div>
+  <header>
+    <h1>Monika Tomanek</h1>
+    <p>Data Science and Software Engineering Student</p>
+  </header>
+  <main>
+    <div class="project">
+      <h2>BoxBreathing</h2>
+      <p>A minimalist desktop app that guides breathing using a subtle glowing strip behind the taskbar. Helps users regulate their nervous system.</p>
+      <a href="https://github.com/monikatomanek/BoxBreathing" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h2>HydrationHint</h2>
+      <p>WPF desktop reminder to stay hydrated. Customizable intervals and gentle animations to nudge users toward healthier habits.</p>
+      <a href="https://github.com/monikatomanek/HydrationHint" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h2>ADHD Hobby Collector</h2>
+      <p>SQL database designed to reflect ADHD hobby-switching behavior. Tracks projects, supplies, and costs. Includes demo queries and stored procedures.</p>
+      <a href="https://github.com/monikatomanek/ADHD_Hobby_Collector" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h2>Emotions-Actions API</h2>
+      <p>Flask + MySQL RESTful API that maps emotions to helpful actions. Includes endpoints, secure credential handling, and testing scripts.</p>
+      <a href="https://github.com/monikatomanek/Emotions-Actions-API" target="_blank">View on GitHub</a>
+    </div>
+  </main>
+  <footer>
+    © 2025 Monika Tomanek
+  </footer>
+</body>
+</html>
