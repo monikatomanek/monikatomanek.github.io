@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: #f2f2f2;
+      background: #dcdcdc; /* Darker grey for glitter visibility */
       color: #222;
       margin: 0;
       padding: 0;
@@ -79,14 +79,14 @@
       width: 4px;
       height: 4px;
       background: white;
-      opacity: 0.8;
+      opacity: 0.7;
       border-radius: 50%;
-      animation: sparkle 2s linear infinite;
+      animation: sparkle 6s linear infinite;
     }
     @keyframes sparkle {
       0% {
         transform: translateY(0) scale(1);
-        opacity: 0.8;
+        opacity: 0.7;
       }
       100% {
         transform: translateY(100vh) scale(0.2);
@@ -128,12 +128,12 @@
   </footer>
   <script>
     const glitter = document.getElementById('glitter');
-    for (let i = 0; i < 40; i++) {
+    for (let i = 0; i < 120; i++) {
       const sparkle = document.createElement('div');
       sparkle.className = 'sparkle';
       sparkle.style.left = Math.random() * 100 + 'vw';
       sparkle.style.top = Math.random() * 100 + 'vh';
-      sparkle.style.animationDelay = Math.random() * 3 + 's';
+      sparkle.style.animationDelay = Math.random() * 6 + 's';
       glitter.appendChild(sparkle);
     }
   </script>
